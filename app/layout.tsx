@@ -16,6 +16,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="fr">
+            <head>
+                <title>QR Code Generator</title>
+                <meta name="description" content={metadata.description ? metadata.description : "Generate QR codes for free."} />
+            </head>
             <body className={outfit.className + " bg-[#111729]"}>
                 {children}
             </body>
